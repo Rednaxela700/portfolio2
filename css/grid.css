@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: [sidebar-1] 40px [explorer-1] 15% [tabIMain] auto;
+    grid-template-rows: [row1-start] 6% [row1-end] auto [footer-start] 15%;
+    grid-template-areas: 
+        "sidebar explorer tab tab"
+        "sidebar explorer main main"
+        "sidebar explorer footer footer";
+    grid-gap: 0rem;
+    /* this magic unit sets grid full screen  */
+    width: 100vw;
+    height: 100vh;
+    
+    
+
+}
+.sidebar {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background-color: rgb(51, 51,51);
+    height: 100%;
+    width: auto;
+    color: rgb(173, 173, 173);
+}
+li.sidebar {
+    padding: 0px 5px 0px 0px;
+}
+.tab {
+    grid-area: tab;
+    background-color: rgb(56, 56, 56);
+    height: 100%;
+    color: rgb(173, 173, 173);
+}
+.list-inline {
+    display: inline-flex;
+    align-content: space-around;
+    padding: 15px;
+}
+li.list-inline {
+    text-align: center;
+
+}
+.explorer {
+    grid-area: explorer;
+    height: 100%;
+    background-color: rgb(37, 37, 38);
+    color: rgb(173, 173, 173);
+    padding: 1rem;
+}
+
+.explorer-list {
+    list-style-type: none;
+}
+li.explorer-list {
+    margin-top: 5px;
+
+}
+a.explorer-list {
+    text-decoration: none;
+    color: rgb(173, 173, 173)
+}
+.main {
+    grid-area: main;
+    background-color: rgb(30, 30, 30);
+    height: 100%;
+    overflow: auto;
+    color: rgb(122, 174, 202);
+}
+.text-in-main {
+    margin-top: 150px;
+    text-align: center;
+    color: aliceblue;
+}
+.mystory {
+    align-content: center;
+}
+.form {
+    display: block;
+    padding: 5px;
+    align-content: center;
+}
+h1.form {
+    align-self: center;
+    padding: 15px;
+    text-align: center;
+}
+.footer {
+    grid-area: footer;
+    background-color: rgb(39, 30, 30);
+}
+.img-logo {
+    height: 50px;
+    width: 50px;
+    justify-self: end;
+
+}
+.footie {
+    display: inline-flex;
+    border: 1px;
+    border-top-color: rgb(30, 30, 30);
+
+
+
+}
+img.footie {
+    height: 50px;
+    margin-top: 3%;
+    margin-left: 5%;
+    padding: 0px 15px 0px 0px;
+    align-content: space-around;
+}
+img.footie:hover {
+    border-inline-start: 30px;
+    border-color: linear-gradient(- 90deg, blue, yellow);
+
+}
