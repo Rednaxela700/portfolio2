@@ -42,7 +42,7 @@ ul#tab {
     display: inline;
     -webkit-padding-start: 0px;
     padding-left: 1rem;
-    align-content: space-around;
+
     justify-content: center;
 }
 ul#tab li {
@@ -71,7 +71,9 @@ ul#tab a {
 li.list-inline {
     text-align: center;
     color: rgb(173, 173, 173);
-
+}
+li.list-inline:first-child {
+    margin-top: 3rem;
 }
 .explorer {
     grid-area: explorer;
@@ -112,7 +114,6 @@ li.explorer-list {
     margin-top: 5px;
 }
 li.explorer-list:first-child {
-    display: block;
     margin-top: 30px;
 }
 a.explorer-list {
