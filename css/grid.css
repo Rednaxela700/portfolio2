@@ -45,7 +45,6 @@ ul#tab {
     display: inline;
     -webkit-padding-start: 0px;
     padding-left: 1rem;
-
     justify-content: center;
 }
 ul#tab li {
@@ -56,7 +55,6 @@ ul#tab li {
     width: 10rem;
     text-align: center;
     border: 1px solid rgb(122, 174, 202);
-    
 }
 ul#tab a {
     display: block;
@@ -87,7 +85,6 @@ li.list-inline:first-child {
     height: 100%;
     background-color: rgb(37, 37, 38);
     color: rgb(173, 173, 173);
-
 }
 h1.explorer {
     display: block;
@@ -163,16 +160,12 @@ h1.form {
 .img-logo {
     height: 50px;
     width: 50px;
-    justify-self: end;
-
 }
 .footie {
     display: inline-flex;
     border: 1px;
     border-top-color: rgb(30, 30, 30);
     padding-left: 25px;
-
-
 }
 img.footie {
     height: 50px;
@@ -184,5 +177,4 @@ img.footie {
 img.footie:hover {
     border-inline-start: 30px;
     border-color: linear-gradient(- 90deg, blue, yellow);
-
 }
