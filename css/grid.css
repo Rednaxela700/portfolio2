@@ -16,13 +16,16 @@
     width: 100vw;
     height: 100vh;
 }
+a:-webkit-any-link {
+    text-decoration: none;
+}
 .sidebar {
     grid-column: 1/2;
     grid-row: 1/4;
     background-color: rgb(51, 51,51);
     height: 100%;
     width: auto;
-    color: rgb(173, 173, 173);
+    color: rgb(173, 173, 173) !important;
 }
 li.sidebar {
     padding: 0px 5px 0px 0px;
@@ -62,15 +65,19 @@ ul#tab a {
     color: rgb(173, 173, 173);
     cursor: default;
 }
+ul#side li a {
+    color: rgb(173, 173, 173) !important;
+}
 .list-inline {
     align-content: space-around;
     padding: 15px;
     list-style-type: none;
     width: 100%;
+    text-decoration: none;
+    cursor: default;
 }
 li.list-inline {
     text-align: center;
-    color: rgb(173, 173, 173);
 }
 li.list-inline:first-child {
     margin-top: 3rem;
