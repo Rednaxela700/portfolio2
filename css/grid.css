@@ -44,7 +44,6 @@ li.sidebar:first-child {
 ul#tab {
     display: inline;
     -webkit-padding-start: 0px;
-    padding-left: 1rem;
     justify-content: center;
 }
 ul#tab li {
@@ -55,6 +54,12 @@ ul#tab li {
     width: 10rem;
     text-align: center;
     border: 1px solid rgb(122, 174, 202);
+}
+ul#tab li:last-child {
+    float: right;
+}
+ul#tab li:hover {
+    visibility: hidden;
 }
 ul#tab a {
     display: block;
@@ -160,6 +165,7 @@ h1.form {
 .img-logo {
     height: 50px;
     width: 50px;
+    float: right;
 }
 .footie {
     display: inline-flex;
